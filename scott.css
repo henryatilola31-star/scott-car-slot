@@ -210,33 +210,80 @@ footer{
 }
  /* RESPONSIVENESS FOR TABLET */
 @media(max-width:768px){
-    body{
-        background-color: blue;
+    .sec-1{
+        min-height: 350px;
+        padding: 70px 20px;
     }
-    .nav-link{
-        gap: 20px;
+    .benz,.lexus{
+        padding: 35px 4%;
     }
-    .prod-div-flex{
-        padding: 0px 20px;
-        gap:5px
+    .benz-flex, .lexus-gig{
+        gap: 18px;
+    }
+    .benz-flex img,.lexus-gig img{
+        height: 200px;
+    }
+    .BMW{
+        padding: 35px 4%;
 
     }
+    .BMW-spot{
+        gap: 18px;
+    }
+    .BMW-spot img{
+        height: 250px;
+    }
+} 
     /* RESPONSIVENESS FOR MOBILE LARGE */
     @media(max-width:425px){
         .nav-link{
-            display: none;
-        }
-        #pass{
-        display: block;
-        }
-        .prod-div-flex{
-            display: block;
+            .sec-1{
+                min-height: 300px;
+                padding: 50px 15px;
+            }
+            .sec-1 h2{
+                font-size: 30px;
+            }
+            .sec-1 h3{
+                font-size: 24px;
+            }
+            .HOD{
+                width: 100%;
+                max-width: 300px;
+            }
+            .sec-3,.benz,.lexus{
+                padding: 25px 15px;
+            }
+            /* one car image per row */
+            .benz-flex,.lexus-gig{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .benz-flex img,.lexus-gig img{
+            width: 100%;
+            height: auto;
+            min-height: 180px;
+            object-fit: cover;
+            }
+            .benz h1, .lexus h2{
+                font-size: 26px;
+            }
+            .BMW{
+                padding: 25px 15px;
 
-        }
-        .prod-div{
-            margin-top: 20px;
-            justify-self:center;
-        }
+            }
+            .BMW h1{
+                font-size: 26px;
+            }
+            .BMW-spot{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .BMW-spot img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
     }
 }
 

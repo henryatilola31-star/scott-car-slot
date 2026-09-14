@@ -1,4 +1,5 @@
 //menu icon
+
 function openMen(){
     document.getElementById('pass').style.display = 'none';
     document.getElementById('puff').style.display = 'block';
