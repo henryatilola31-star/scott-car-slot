@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 70px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.business-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.business-logo img{
+    width: 50px;
+    height: 40px;
+}
+.business-logo h1{
+    font-size: 1.5rem;
+    font-family: arial;
+}
+button{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.sec-1{
+    background-image: url(/3dd04614b6d3d56c0b90c1c54f305553.png);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    text-align: center;
+    font-family: arial;
+    font-size: 3rem;
+    color: white;
+}
+.sec-1 h2{
+    padding-top: 120px;
+    animation: bounce 0.4s;
+}
+@keyframes bounce{
+    0%{
+        transform: rotateY(180deg);
+    }
+    20%{
+        transform: rotateX(180deg);
+    }
+}
+.sec-1 h3{
+
+    animation:bounce 0.4s ;
+}
+@keyframes bounce{
+    0%{
+        transform: rotateY(180deg);
+    }
+    20%{
+        transform: rotateX(180deg);
+    }
+}
+.sec-3 h3{
+ font-family: brush script;
+ font-size: 50px;
+ color: grey;
+ margin-top: 20px;
+ animation:bounce o.10s;
+ 
+}
+@keyframes bounce{
+ 0%{
+    transform: rotateY('360deg');
+
+ }
+ 20%{
+    transform: rotateX('360deg');
+ }
+}
+.benz{
+    display:  block;
+    gap:20px;
+    border: 5px solid black;
+    border-radius: 5PX;
+}
+.benz h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.benz-flex img{
+    height: 200px;
+    margin-top: 50px;
+align-items: center;
+padding-left: 50px;
+}
+.lexus{
+ display: block;
+ gap: 20px;
+ border: 5px solid grey;
+ border-radius: 15px;
+ margin-top: 25px;
+
+}
+.lexus h2{
+ font-family: cursive;
+ font-size: 30px;
+ margin-top: 20px;
+ text-align: center;
+}
+.lexus-gig img{
+   height: 300px;
+   align-items: center;
+   padding-left: 100px;
+   padding-top: 70px;
+   left: 200px;
+
+
+
+}
+.HOD{
+    text-align: center;
+background-color: white;
+border: none;
+width: 199px;
+border-radius: 15px;
+padding: 10px;
+font-size: 15px;
+font-family: cursive;
+
+}
+.BMW{
+    display: block;
+    justify-content: center;
+    gap: 30px;
+    border: 10px solid black;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.BMW h1{
+     font-family: cursive;
+ font-size: 30px;
+ margin-top: 20px;
+ text-align: center;
+}
+.BMW-spot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 10px 15px 20px;
+
+}
+footer{
+    background-color:grey;
+    text-align: center;
+    color:black;
+    padding: 30px 0px;
+    font-family: arial black;
+    margin-top: 30px;
+    font-size: 25px;
+ }
+ /* RESPONSIVENESS FOR TABLET */
+@media(max-width:768px){
+    body{
+        background-color: blue;
+    }
+    .nav-link{
+        gap: 20px;
+    }
+    .prod-div-flex{
+        padding: 0px 20px;
+        gap:5px
+
+    }
+    /* RESPONSIVENESS FOR MOBILE LARGE */
+    @media(max-width:425px){
+        .nav-link{
+            display: none;
+        }
+        #pass{
+        display: block;
+        }
+        .prod-div-flex{
+            display: block;
+
+        }
+        .prod-div{
+            margin-top: 20px;
+            justify-self:center;
+        }
+    }
+}
+
+
+  
